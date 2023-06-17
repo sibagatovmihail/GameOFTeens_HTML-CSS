@@ -341,6 +341,11 @@ body {
   color: var(--text-secondary);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.25rem;
+}
+
 .heading {
   background: url("../img/decor-2.svg") center no-repeat;
 }
@@ -382,7 +387,6 @@ body {
 }
 
 .heading__image {
-  display: none;
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -637,6 +641,10 @@ body {
   fill: var(--text-accent);
 }
 
+.plans__item:hover .plans__price span {
+  color: var(--text-accent);
+}
+
 .plans__item:hover .plans__button {
   color: var(--text-white);
 }
@@ -655,6 +663,8 @@ body {
 .plans__price span {
   font-weight: 700;
   color: var(--text-secondary);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .plans__button {
@@ -677,10 +687,6 @@ body {
         -ms-flex: 0 0 55.8974358974%;
             flex: 0 0 55.8974358974%;
     padding-right: 1.875rem;
-  }
-
-  .heading__image {
-    display: block;
   }
 }
 
@@ -1102,6 +1108,10 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+  }
+
+  .heading__image {
+    display: none;
   }
 
   .heading__image_copy {
